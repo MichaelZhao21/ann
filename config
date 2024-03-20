@@ -1,0 +1,59 @@
+##### Sigmoid Tests #####
+sigmoid 0.01 50
+sigmoid 0.01 100
+sigmoid 0.01 200
+sigmoid 0.05 50
+sigmoid 0.05 100
+sigmoid 0.05 200
+sigmoid 0.1 50
+sigmoid 0.1 100
+sigmoid 0.1 200
+sigmoid 0.5 50
+sigmoid 0.5 100
+sigmoid 0.5 200
+sigmoid 1 50
+sigmoid 1 100
+sigmoid 1 200
+sigmoid 5 50
+sigmoid 5 100
+sigmoid 5 200
+
+##### Tanh Tests #####
+tanh 0.01 50
+tanh 0.01 100
+tanh 0.01 200
+tanh 0.05 50
+tanh 0.05 100
+tanh 0.05 200
+tanh 0.1 50
+tanh 0.1 100
+tanh 0.1 200
+tanh 0.5 50
+tanh 0.5 100
+tanh 0.5 200
+tanh 1 50
+tanh 1 100
+tanh 1 200
+tanh 5 50
+tanh 5 100
+tanh 5 200
+
+##### Relu Tests #####
+relu 0.01 50
+relu 0.01 100
+relu 0.01 200
+relu 0.05 50
+relu 0.05 100
+relu 0.05 200
+relu 0.1 50
+relu 0.1 100
+relu 0.1 200
+relu 0.5 50
+relu 0.5 100
+relu 0.5 200
+relu 1 50
+relu 1 100
+relu 1 200
+relu 5 50
+relu 5 100
+relu 5 200

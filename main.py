@@ -10,7 +10,11 @@ DATASET_URL = "https://archive.ics.uci.edu/static/public/53/iris.zip"
 
 
 def main():
+    """
+    Main function runner
+    """
     df = download_and_load_dataset()
+    config = load_config_file()
 
 
 def download_and_load_dataset() -> pd.DataFrame:
@@ -44,5 +48,26 @@ def download_and_load_dataset() -> pd.DataFrame:
     return df
 
 
+def load_config_file() -> dict:
+    """
+    Loads the configuration file
+
+    :return: dictionary with the configuration
+    """
+    with open("config", "r") as f:
+        lines = f.readlines()
+        proc_lines = [
+            line.strip()
+            for line in lines
+            if not line.startswith("#") and line.strip() != ""
+        ]
+        config = [
+            {"act": a[0], "rate": float(a[1]), "iters": int(a[2])}
+            for a in [line.split() for line in proc_lines]
+        ]
+        return config
+
+
 if __name__ == "__main__":
-    main()
+    # main()
+    load_config_file()

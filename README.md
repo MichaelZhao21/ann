@@ -1,4 +1,4 @@
-# README
+# ANN (Artificial Neural Network) from scratch!
 
 This is an Artificial Neural Network that performs a stochastic gradient descent.
 
@@ -9,6 +9,11 @@ The main runner code is in `main.py` while the model code is placed in `model.py
 To install libraries, create a [virtual environment](https://docs.python.org/3/library/venv.html) and install the required libraries with:
 
 ```sh
+# Virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install libraries
 python3 -m pip install -r requirements.txt
 # or
 pip install -r requirements.txt
@@ -17,8 +22,8 @@ pip install -r requirements.txt
 The configuration file (`config.txt`) stores the hyperparameters to test, in the following format:
 
 ```
-<hidden layers> <learning rate> <iterations>
-8,6     0.1     100 
+<activation function> <learning rate> <iterations>
+eg:           sigmoid             0.1          100 
 // and so on
 ```
 
