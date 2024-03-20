@@ -2,6 +2,7 @@ import os
 import urllib.request
 import zipfile
 import pandas as pd
+from src import model
 
 # 10% of the data will be used for testing
 TEST_SPLIT = 0.1
