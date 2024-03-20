@@ -4,7 +4,7 @@ This is an Artificial Neural Network that performs a stochastic gradient descent
 
 ## How to run
 
-The main runner code is in `main.py` while the model code is placed in `model.py`.
+The main runner code is in `main.py` while the model code is placed in `src/model.py`.
 
 To install libraries, create a [virtual environment](https://docs.python.org/3/library/venv.html) and install the required libraries with:
 
