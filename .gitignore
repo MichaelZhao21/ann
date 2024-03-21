@@ -2,3 +2,4 @@ venv
 *.zip
 iris
 **/*/__pycache__
+output*

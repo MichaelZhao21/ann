@@ -67,7 +67,7 @@ class Model:
         self,
         layers,
         activation="sigmoid",
-        split_percent=0.1,
+        test_split=0.1,
         learn_rate=0.1,
         iterations=100,
     ):
@@ -166,7 +166,7 @@ class Model:
         # Assign other parameters to attributes
         self.learn_rate = learn_rate
         self.iterations = iterations
-        self.split_percent = split_percent
+        self.test_split = test_split
         self.activation = activation
 
     def pre_process(self, df: pd.DataFrame):
@@ -192,7 +192,7 @@ class Model:
         X = scaler.fit(X).transform(X)
 
         self.X_train, self.X_test, y_train, y_test = train_test_split(
-            X, y, test_size=self.split_percent
+            X, y, test_size=self.test_split
         )
         # Reset index after splitting
         self.y_train = y_train.reset_index(drop=True)
