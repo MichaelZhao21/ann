@@ -2,7 +2,7 @@
 
 This is an Artificial Neural Network that performs a stochastic gradient descent.
 
-## How to run
+## Installation and Setup
 
 The main runner code is in `main.py` while the model code is placed in `src/model.py`.
 
@@ -19,7 +19,7 @@ python3 -m pip install -r requirements.txt
 pip install -r requirements.txt
 ```
 
-The configuration file (`config.txt`) stores the hyperparameters to test, in the following format:
+The configuration file (`config.txt`) stores the hyperparameters to test. The default configuration file is set in the file already, but feel free to adjust the config to your desired output. The config is in the following format:
 
 ```
 <activation function> <learning rate> <iterations>
@@ -33,9 +33,9 @@ Run the model and tests with:
 python3 main.py
 ```
 
-You will be presented in your terminal with the epochs and accuracy at each epoch as well as a tabular form of the overall accruacies and parameters. The table will be rendered to `results.png`.
+You will be presented in your terminal with the epochs and accuracy at each epoch as well as a tabular form of the overall accruacies and parameters. The CSV of the output will be saved to `output.csv` and the table will be rendered as a Markdown table, stored in `output.md`. VSCode has a [great extension](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf) to convert said table to a PDF (which is submitted).
 
-## Train Test Split
+# Train Test Split
 
 We chose a train/test split of 10% since there is not a whole lot of data to train with.
 
